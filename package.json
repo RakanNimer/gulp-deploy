@@ -1,0 +1,29 @@
+{
+  "name": "gulp-deploy",
+  "version": "1.0.0",
+  "description": "Deploying a project with Gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RakanNimer/gulp-deploy"
+  },
+  "keywords": [
+    "gulp",
+    "deploy"
+  ],
+  "author": "Rakan Nimer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RakanNimer/gulp-deploy/issues"
+  },
+  "homepage": "https://github.com/RakanNimer/gulp-deploy",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-scp": "0.0.3",
+    "gulp-ssh": "^0.3.3",
+    "yargs": "^3.9.0"
+  }
+}
