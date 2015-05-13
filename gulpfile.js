@@ -2,17 +2,17 @@ var argv = require('yargs').argv,
     gulp = require('gulp'),
     gulpSCP = require('gulp-scp'),
     GulpSSH = require('gulp-ssh'),
-    keyPath = '/Users/Apple/.ssh/id_rsa',
     exec = require('child_process').exec,    
     remoteHost = 'ip_address',
     username = 'user',
-    port = 22,
     project_path = '/var/www/my_project',
     project_name = 'my_project',
+    keyPath = '/Users/Apple/.ssh/id_rsa',
+    port = 22,
     privateKey = '';
 
 try {
-  privateKey = require('fs').readFileSync(keyPath)
+  privateKey = require('fs').readFileSync(keyPath);
 }
 catch(e) {
   console.log("Key not found. Will continue normally but can't ssh if needed");
